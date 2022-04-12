@@ -89,9 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (document.querySelector('#initial_loan_input')) {
         let max_initial_loan_input = 0;
-        document.querySelector('#initial_loan_input').addEventListener("input", function () {
+        document.querySelector('#initial_loan_input').addEventListener("keyup", function (event) {
             document.querySelector('.btn-get-result').disabled = false;
-            let val = document.querySelector('#initial_loan_input').value;
+            let val = event.currentTarget.value;
             max_initial_loan_input = document.querySelector('#initial_loan_input').getAttribute('max');
 
             down_payment = Number(val) / (100 * down_payment_min);
@@ -135,25 +135,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     let max_down_payment_input = 0;
     let min_down_payment_input = 0;
+    let timer;
 
     if (document.querySelector('#down_payment_input')) {
-        document.querySelector('#down_payment_input').addEventListener("input", function () {
-            let val = document.querySelector('#down_payment_input').value;
+        document.querySelector('#down_payment_input').addEventListener("keyup", function (event) {
+            let val = event.currentTarget.value;
             max_down_payment_input = document.querySelector('#down_payment_input').getAttribute('max');
             min_down_payment_input = document.querySelector('#down_payment_input').getAttribute('min');
 
-            if (val < Number(min_down_payment_input)) {
-                val = Number(min_down_payment_input);
-                console.log(min_down_payment_input);
-                document.querySelector('#down_payment_input').value = val;
-            }
+            clearTimeout(timer);
+
+            timer = setTimeout(() => {
+                if (val < Number(min_down_payment_input)) {
+                    val = Number(min_down_payment_input);
+                    document.querySelector('#down_payment_input').value = val;
+                }
+            }, 500);
+
             if (val > Number(max_down_payment_input)) {
                 val = Number(max_down_payment_input);
                 document.querySelector('#down_payment_input').value = val;
             }
+
             down_payment_range.update({
                 from: val
             });
+
+
+
         });
     }
 
