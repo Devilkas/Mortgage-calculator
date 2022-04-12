@@ -16,7 +16,6 @@ All commands run in the project folder
 # API
  The api can now be accessed at [http://localhost:8000/api/banks](http://localhost:8000/api/banks)
  
-Run `php artisan route:list` to take more information about the route
  
 | Metgod | Link | Route>Controller|
 |--|--|--|
@@ -25,3 +24,5 @@ Run `php artisan route:list` to take more information about the route
 |GET/HEAD|api/banks/{bank}|banks.show›Api\BankController@show|
 |PUT/PATCH|api/banks/{bank}|banks.update›Api\BankController@update|
 |DELETE|api/banks/{bank}|banks.destroy›Api\BankController@destroy|
+
+Run `php artisan route:list` to take more information about the route
