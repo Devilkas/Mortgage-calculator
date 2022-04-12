@@ -9,8 +9,6 @@
             </div>
             <div class="modal-body">
                 <form id="bank-form-send" class="form" enctype="multipart/form-data">
-                    {{-- <form action="{{ route('banks.store') }}" method="post" enctype="multipart/form-data"  > --}}
-                    {{-- @csrf --}}
                     <div class="mb-3">
                         <label for="bank_name" class="form-label">Bank name</label>
                         <input type="text" class="form-control" id="bank_name" name="bank_name" required>
@@ -38,8 +36,6 @@
                         <input type="number" class="form-control" id="min_down_payment" name="min_down_payment"
                             required>
                     </div>
-
-                    {{-- <button type="submit" class="btn btn-primary">Add</button> --}}
                     <button type="button" class="btn btn-add from-send">Add </button>
                 </form>
             </div>

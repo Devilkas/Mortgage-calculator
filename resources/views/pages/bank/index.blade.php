@@ -37,13 +37,6 @@
                                 <div class="table__td actions">
                                     <a href="{{ route('banks.edit', $item->id) }}"><i class="bi bi-pencil-fill"></i></a>
                                     <i class="delete-form bi bi-trash-fill" data-id={{ $item->id }}></i>
-                                    {{-- <form action="{{ route('banks.destroy', $item->id) }}" method="post"
-                                        class="delete-form">
-                                        @csrf
-                                        @method("DELETE")
-
-                                        <a href=""><i class="bi bi-trash-fill"></i></a>
-                                    </form> --}}
                                 </div>
                             </div>
                         @endforeach

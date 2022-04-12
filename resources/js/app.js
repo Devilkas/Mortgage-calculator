@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     require('./bootstrap');
 
-
-
     if (document.querySelector('#interest_rate')) {
         ionRangeSlider('#interest_rate', {
             min: 0,
@@ -219,9 +217,6 @@ document.addEventListener('DOMContentLoaded', () => {
         await axios.delete(`/api/banks/${id}`)
     }
 
-    // getBanks();
-
-
     let storeBank = async (data) => {
         errors = ''
 
@@ -280,7 +275,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 object[key] = value;
             });
             updateBank(event.target.dataset.id, { ...object })
-            // updateBank(document.querySelector('#edit-form').dataset.id);
         })
     }
 
@@ -307,7 +301,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 })
-
-
-
-

@@ -9,8 +9,6 @@
         <div class="row">
             <div class="col-md-12">
                 <form id="edit-form" class="form">
-                    {{-- <form action="{{ route('banks.update', $item->id) }}" method="post" enctype="multipart/form-data"
-                    class="form"> --}}
                     @csrf
                     @method("PUT")
                     <div class="mb-3">
@@ -44,7 +42,6 @@
                         <input type="number" class="form-control" id="min_down_payment" name="min_down_payment"
                             value="{{ $item->min_down_payment }}" required>
                     </div>
-                    {{-- <button type="submit" class="btn btn-warning">Edit</button> --}}
                     <button type="button" class="btn btn-warning edit-from-btn" data-id="{{ $item->id }}">Edit </button>
                 </form>
             </div>
