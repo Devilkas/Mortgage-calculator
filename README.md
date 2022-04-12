@@ -1,18 +1,12 @@
 # Mortgage calculator
 
-Production-ready.
-
-
-# How to start Mortgage calculator
-
 Clone into the current folder and remove all unnecessary (one command):
 
     git clone https://github.com/Devilkas/Mortgage-calculator.git .; rm -rf trunk .gitignore readme.md .git
 
 Or **[Download](https://github.com/Devilkas/Mortgage-calculator/archive/refs/heads/main.zip)** **Mortgage-calculator** from GitHub
 
-
-## Installation
+## How to start Mortgage calculator
 All commands run in the project folder
  1. Run `composer install` to install all dependencies
  2. Create `.env` in application root `cp .env.example .env`
