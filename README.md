@@ -1,21 +1,22 @@
-<h1>Mortgage calculator</h1>
+# Mortgage calculator
 
-<p>Production-ready Gulp starter.</p>
+Production-ready.
 
-<h2>How to start Mortgage calculator</h2>
 
-<p>Clone into the current folder and remove all unnecessary (one command):</p>
+# How to start Mortgage calculator
 
-<pre>git clone https://github.com/Devilkas/Mortgage-calculator.git .; rm -rf trunk .gitignore readme.md .git</pre>
+Clone into the current folder and remove all unnecessary (one command):
 
-<ol>
-	<li>Clone or <a href="https://github.com/Devilkas/Mortgage-calculator/archive/refs/heads/main.zip">Download</a>
-		<strong>Mortgage-calculator</strong> from GitHub
-	</li>
-	<li> Run `composer install` to install all dependencies</li>
-	<li>Go to project folder</li>
-	<li>Create <strong>.env</strong> in application root <strong>cp .env.example .env</strong></li>
-	<li>Run <strong>php artisan key:generate</strong> to generate key</li>
-	<li>Run: <strong>php artisan serv</strong></li>
-	<li>Open link: <strong><a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></strong> (by default) </li>
-</ol>
+    git clone https://github.com/Devilkas/Mortgage-calculator.git .; rm -rf trunk .gitignore readme.md .git
+
+Or **[Download](https://github.com/Devilkas/Mortgage-calculator/archive/refs/heads/main.zip)** **Mortgage-calculator** from GitHub
+
+
+## Installation
+
+ 1. Go to project folder
+ 2. Run `composer install` to install all dependencies
+ 3. Create `.env` in application root `cp .env.example .env`
+ 4. Run `php artisan key:generate` to generate key
+ 5. Run `php artisan serv` 
+ 6. Open link [http://127.0.0.1:8000](http://127.0.0.1:8000) (by default)
