@@ -1,4 +1,12 @@
 # Mortgage calculator
+
+## Requirements
+
+ - PHP >= 8.0
+ - Installed Composer
+
+## Installing project
+
 Clone into the current folder and remove all unnecessary (one command):
 
     git clone https://github.com/Devilkas/Mortgage-calculator.git .; rm -rf trunk .gitignore readme.md .git
