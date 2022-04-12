@@ -8,7 +8,7 @@ Or **[Download](https://github.com/Devilkas/Mortgage-calculator/archive/refs/hea
 # How to start Mortgage calculator
 All commands run in the project folder
 1. Run `composer install` to install all dependencies
-2. Create `.env` in application root `cp .env.example .env`
+2. Create `.env` in application root using command `cp .env.example .env`
 3. Run `php artisan key:generate` to generate key
 4. Run `php artisan serv`
 5. Open link [http://127.0.0.1:8000](http://127.0.0.1:8000) (by default)
