@@ -12,7 +12,7 @@
 	<li>Clone or <a href="https://github.com/Devilkas/Mortgage-calculator/archive/refs/heads/main.zip">Download</a>
 		<strong>Mortgage-calculator</strong> from GitHub
 	</li>
-	<li> Run <strong>composer install</strong> to install all dependencies</li>
+	<li> Run `composer install` to install all dependencies</li>
 	<li>Go to project folder</li>
 	<li>Create <strong>.env</strong> in application root <strong>cp .env.example .env</strong></li>
 	<li>Run <strong>php artisan key:generate</strong> to generate key</li>
