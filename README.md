@@ -24,7 +24,7 @@ All commands run in the project folder
 # API
  The api can now be accessed at [http://localhost:8000/api/banks](http://localhost:8000/api/banks) (by default)
   
-| Metgod | Link | Route>Controller|
+| Methods | Link | Route>Controller|
 |--|--|--|
 | GET/HEAD|api/banks|banks.index›Api\BankController@index|
 |POST|api/banks|banks.store›Api\BankController@store|
